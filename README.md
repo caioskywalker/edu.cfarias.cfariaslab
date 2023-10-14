@@ -36,9 +36,9 @@ classDiagram
   }
 
   User "1" *-- "1" Account : contains
-  User *-- Feature : contains
-  User *-- Card : contains
-  User *-- News : contains
+  User "1" *-- "n" Feature : contains
+  User "1" *--  "1" Card : contains
+  User "1" *-- "n" News : contains
 
 ```
 *************************************************************
