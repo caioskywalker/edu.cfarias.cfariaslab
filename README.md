@@ -35,10 +35,10 @@ classDiagram
     - description: string
   }
 
-  User *--> Account : contains
-  User *--> Feature : contains
-  User *--> Card : contains
-  User *--> News : contains
+  User "1" *-- "1" Account : contains
+  User *-- Feature : contains
+  User *-- Card : contains
+  User *-- News : contains
 
 ```
 *************************************************************
